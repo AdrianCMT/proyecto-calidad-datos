@@ -1,0 +1,43 @@
+INFORME INTERPRETATIVO - ANALISIS INICIAL DEL DATASET DE VIDEOJUEGOS
+
+1. Observaciones sobre la estructura del dataset
+- El dataset contiene 16598 filas y 11 columnas.
+- Variables numéricas detectadas: 7.
+- Variables categóricas detectadas: 4.
+
+2. Valores nulos, tipos de datos y posibles inconsistencias
+- Tipos de datos por columna:
+  * Rank: int64
+  * Name: str
+  * Platform: str
+  * Year: float64
+  * Genre: str
+  * Publisher: str
+  * NA_Sales: float64
+  * EU_Sales: float64
+  * JP_Sales: float64
+  * Other_Sales: float64
+  * Global_Sales: float64
+
+- Columnas con mayor cantidad de nulos:
+  * Year: 271 nulos (1.63%)
+  * Publisher: 58 nulos (0.35%)
+  * Rank: 0 nulos (0.0%)
+  * Name: 0 nulos (0.0%)
+  * Platform: 0 nulos (0.0%)
+  * Genre: 0 nulos (0.0%)
+  * NA_Sales: 0 nulos (0.0%)
+  * EU_Sales: 0 nulos (0.0%)
+  * JP_Sales: 0 nulos (0.0%)
+  * Other_Sales: 0 nulos (0.0%)
+
+3. Reflexión sobre pasos siguientes (limpieza y análisis)
+- Tratar valores nulos: imputación, eliminación o reglas por variable.
+- Revisar formatos de texto, categorías y posibles duplicados.
+- Identificar outliers en variables numéricas relevantes.
+- Definir variables objetivo para análisis descriptivo y visualizaciones.
+
+4. Aplicación de los criterios al dataset del proyecto personal
+- Repetir la secuencia: carga, head/tail/shape, info, describe numérico y categórico.
+- Documentar diferencias de estructura, nulos y tipos respecto a este dataset.
+- Priorizar limpieza según impacto en el objetivo analítico del proyecto personal.
