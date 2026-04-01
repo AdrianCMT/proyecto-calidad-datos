@@ -1,0 +1,32 @@
+﻿INFORME INTERPRETATIVO - EVIDENCIA 2
+
+Tema:
+Evolucion del precio promedio del metro cuadrado de arriendos en las Comunas 11 (Laureles) y 14 (El Poblado), y su relacion con la apertura de nuevos establecimientos comerciales.
+
+1. Observaciones sobre la estructura del dataset
+- El dataset contiene informacion mensual para los ultimos 4 anos (2022-2025).
+- Se incluyen dos comunas: Laureles (11) y El Poblado (14).
+- Variables principales: fecha, anio, mes, comuna, codigo_comuna, precio_m2_cop, nuevos_cafes, nuevos_bares, nuevos_restaurantes y nuevos_establecimientos_total.
+- La estructura permite analizar tanto tendencia temporal como diferencias entre zonas.
+
+2. Identificacion de valores nulos, tipos de datos y posibles inconsistencias
+- Se revisaron valores nulos por columna y su porcentaje.
+- Se verificaron tipos de datos para variables numericas, categoricas y temporales.
+- Se evaluaron posibles inconsistencias: registros duplicados, comunas no esperadas y desalineaciones entre nombre de comuna y codigo.
+- Esta validacion inicial permite asegurar calidad base para analisis descriptivo y correlacional.
+
+3. Hallazgos principales del analisis
+- El precio promedio del metro cuadrado muestra una tendencia de crecimiento en ambas comunas.
+- El Poblado mantiene niveles de precio por m2 superiores a Laureles durante el periodo analizado.
+- La dinamica de aperturas comerciales (cafes, bares y restaurantes) presenta asociacion positiva con el comportamiento del precio, especialmente en periodos de mayor actividad comercial.
+- La relacion identificada es correlacional y no implica causalidad directa.
+
+4. Reflexion sobre pasos siguientes de limpieza y analisis
+- Afinar tratamiento de atipicos en precio_m2_cop y aperturas.
+- Incorporar variables externas de contexto: inflacion, tasa de interes y vacancia.
+- Evaluar modelos de regresion por comuna para estimar el efecto marginal de nuevas aperturas sobre el precio del m2.
+- Profundizar en analisis espacial por barrio para mejorar la precision del resultado.
+
+5. Aplicacion de criterios al dataset del proyecto personal
+- Se aplicaron los mismos criterios metodologicos: inspeccion rapida, diagnostico estructural, resumen estadistico y validacion de calidad.
+- El flujo de trabajo queda documentado en el notebook del proyecto y es replicable para otros datasets de mercado inmobiliario.
